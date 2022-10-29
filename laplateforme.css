@@ -1,0 +1,484 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+    box-sizing: border-box;
+    font-family: 'roboto slab';
+}
+/* Le header */
+header
+{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.logo-formeplate-header /*Logo de La Plateforme_*/
+{
+    height: 60%;
+    float: left;
+}
+/* Menu déroulant */
+nav
+{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+}
+nav ul
+{
+    list-style-type: none;
+    float: right;
+}
+nav ul li
+{
+    float: left;
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+nav ul::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a
+{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 1px 0px;
+}
+nav a:hover
+{
+    color: rgb(144, 144, 144);
+
+}
+.en-dessous
+{
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .en-dessous
+{
+    display: block;
+}
+.en-dessous li
+{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.en-dessous a
+{
+    padding: 10px;
+    border-bottom: none;
+}
+.en-dessous a:hover
+{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.menu-deroulant > a::after
+{
+    content:" ▼";
+    font-size: 11px;
+}
+nav
+{
+    font-family: 'Roboto Slab', serif;
+}
+/* Le corps */
+/* Résumé */
+.resume
+{
+    background-color: #336699;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+}
+.resume-formeplate
+{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 25px;
+}
+.resume-formeplate-zone
+{
+    width: 70%;
+    height: 30%;
+    padding: 2em;
+}
+.photo-students{
+    width: 55%;
+}
+/*Bouton*/
+.bouton-1
+{
+    background-color: #ff2063ff;
+    border-radius: 40px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    height: 80px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.bouton-1:hover, .bouton-1:focus
+{
+    background-color: #F082AC;
+}
+.bouton-2
+{
+    margin-top: 10%;
+    background-color: #ffca4b;
+    border-radius: 20px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    align-self: center;
+}
+
+.conditions, .temoignages-resume
+{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 10px;
+    padding-left: 1em;
+}
+/* Les cursus */
+.classe-titre
+{
+    font-family: 'Roboto Slab', serif;
+    color: #336699;
+    font-size: 45px;
+}
+.classe-titre-zone
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.classes
+{
+    margin-top: 2%;
+    width: 100%;
+}
+.web-coding, .ai, .cybersec
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    box-shadow: 2px 5px 5px 2px rgba(66, 63, 71, 0.1);
+
+}
+.web-coding-img, .ai-img, .cybersec-img, .recrue-talent-img
+{
+    height: 150px;
+    width: 150px;
+
+}
+.cursus
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    align-items: center;
+}
+.classe-titres
+{
+    margin-top: 5%;
+    font-size: 15px;
+    padding: 10px;
+    font-family: 'Roboto Slab', serif;
+    color: #336699;
+    
+}
+
+.recrue-talent-titres
+{
+    font-family: 'Roboto Slab', serif;
+    color: #336699;
+    font-size: 15px;
+    width: 50%;
+}
+.recrue-talent
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    box-shadow: 2px 5px 5px 2px rgba(66, 63, 71, 0.1);
+}
+
+/* Témoignages */
+.classe-titre-zone{
+    display: flex;
+    flex-direction: column;
+}
+.temoignages-titre
+{
+    margin-top: 2%;
+    font-size: 75px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+.temoignages
+{
+    background-color: #ffa000;
+    margin-top: 30px;
+}
+.temoignages-resume{
+    font-size: larger;
+}
+.temoignages-zone
+{
+    margin-top: 3%;
+    padding-bottom: 3%;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+.temoignages-zone iframe{
+    padding: 25px;
+}
+
+/* FOOTER */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  
+  body {
+    /* font-family: acumin-pro, system-ui, sans-serif; */
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    align-items: start;
+    min-height: 100vh;
+  }
+  
+  .footer {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: white;
+    background-color: #313131;
+    border-top: 1px solid #e5e5e5;
+    font-weight: bolder;
+  }
+  
+  .footer > * {
+    flex:  1 100%;
+  }
+  
+  .footer__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer__logo {
+width: 70%;
+  }
+  
+  .footer__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer address {
+    font-style: normal;
+    color: white;
+  }
+  
+  .footer__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: white;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer li {
+    line-height: 2em;
+  }
+  
+  .footer a {
+    text-decoration: none;
+  }
+  
+  .footer__nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .footer__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav__ul a {
+    color: white;
+  }
+  
+  .nav__ul--extra {
+    column-count: 1;
+    column-gap: 1.25em;
+  }
+  
+  .legal {
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 1%;
+ 
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart {
+    color: white;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      /* flex-grow: 2; */
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
+  
+.footer h2{
+    font-weight: bolder;
+}
+  /* button contact  */
+
+.button-31 {
+  background-color: #313131;
+  border-radius: 4px;
+  border-style:solid;
+  box-sizing: border-box;
+  border-color: white;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Farfetch Basis","Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 44px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 60%;
+}
+
+.button-31:hover,
+.button-31:focus {
+  opacity: .75;
+}
